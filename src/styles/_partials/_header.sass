@@ -1,0 +1,29 @@
+header
+	background: #ffffff
+	opacity: darken(#fff,10%)
+	position: fixed
+	z-index: 999
+	width: 100%
+	transition: .5s all ease-in-out
+	.navbar
+		+pad(null 0)
+		a
+			&:hover
+				background-color: lighten(#000,80%)
+				border-radius: 3px 3px 3px 3px
+				font-weight: 600
+	.navbar-brand
+		img 
+			max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem
+				transition: .5s all ease-in-out
+		&.active
+			background: #ffffff
+			box-shadow: 0 3px 8px rgba(0,0,0,.5)
+			+media-breakpoint-up(md)
+				max-height: 5rem
+				img 
+					max-height: 2rem

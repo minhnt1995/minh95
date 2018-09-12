@@ -1,0 +1,124 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home_banner
+		article.banner_list
+			.item
+				.title
+					.container
+						.row
+							.col
+								h1 
+									| Chung Toi La 
+									span.d-block FullStack VietNam
+								p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+								a.btn.btn-light(href="#") Xem Them
+	section.home-slider.mt-5
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=0 ; x<3 ; x++)
+							.item
+								img(src="./img/home_banner_2.png", alt="")
+								.title
+									h2 USA'S HOTTEST JEANS
+									p SHOPPING NOW
+	section.home_list
+		article.product_list
+			.container
+				.title.title_line.page_title
+					h2 FULLSTACK VIETNAM
+			.container
+				.row
+					.col-6.col-lg-3.item
+						a(href="#" title="")
+							figure
+								.block_img
+									img(src="./img/home_product_1.png", alt="")
+								figcapsion
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									p $36.59
+					.col-6.col-lg-3.item
+						a(href="#" title="")
+							figure
+								.block_img
+									img(src="./img/home_product_2.png", alt="")
+								figcapsion
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									p $36.59
+					.col-6.col-lg-3.item
+						a(href="#" title="")
+							figure
+								.block_img
+									img(src="./img/home_product_3.png", alt="")
+								figcapsion
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									p $36.59
+					.col-6.col-lg-3.item
+						a(href="#" title="")
+							figure
+								.block_img
+									img(src="./img/home_product_4.png", alt="")
+								figcapsion
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									p $36.59
+	section.home_sale
+		article.sale_list
+			.container
+				.item
+					figure
+						img.img-fluid(src="./img/home_banner_3.png", alt="")
+						.title
+							h2 HẠNH PHÚC PHÍA SAU
+							p USA'S HOTTEST JEANS
+						//- .sale
+						span Sale 20%
+	section.home-bg-new
+		.container
+			.row 
+				.col-md-4
+					.item
+						figure
+							img(src="./img/home_product_5.png", alt="alt")
+				.col-sm-8
+					.title
+						h2 HẠNH PHÚC PHÍA SAU
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quod esse aliquid numquam laborum sint quia illo, ut vitae corrupti cum nobis repellat, quam eius animi, alias in consequatur excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quod esse aliquid numquam laborum sint quia illo, ut vitae corrupti cum nobis repellat, quam eius animi, alias in consequatur excepturi!
+	section.home_clients
+		.container
+			article.clients_list
+				.title.title_line.page_title.mb-5
+					h2 FULLSTACK VIETNAM
+				.owl-carousel.owl-theme
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_1.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_2.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_3.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_4.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_5.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/clients_6.png", alt="")
